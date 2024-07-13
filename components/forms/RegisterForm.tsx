@@ -28,7 +28,7 @@ import SubmitButton from "../SubmitButton";
 
 const RegisterForm = ({ user }: { user: User }) => {
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); 
 
   const form = useForm<z.infer<typeof PatientFormValidation>>({
     resolver: zodResolver(PatientFormValidation),
